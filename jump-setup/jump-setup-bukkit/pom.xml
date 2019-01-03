@@ -3,24 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>jump</artifactId>
+    <artifactId>jump-setup</artifactId>
     <groupId>de.valuga</groupId>
     <version>0.0.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>jump-setup</artifactId>
+  <artifactId>jump-setup-bukkit</artifactId>
   <version>0.0.1</version>
-  <modules>
-    <module>jump-setup-parent</module>
-    <module>jump-setup-bukkit</module>
-  </modules>
-  <packaging>pom</packaging>
 
   <dependencies>
     <dependency>
       <groupId>de.valuga</groupId>
-      <artifactId>jump-config</artifactId>
+      <artifactId>jump-setup-parent</artifactId>
       <version>LATEST</version>
       <scope>compile</scope>
     </dependency>

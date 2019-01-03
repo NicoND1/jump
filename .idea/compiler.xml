@@ -9,6 +9,8 @@
         <module name="jump-bukkit" />
         <module name="jump-config" />
         <module name="jump-parent" />
+        <module name="jump-setup-bukkit" />
+        <module name="jump-setup-parent" />
       </profile>
     </annotationProcessing>
   </component>
