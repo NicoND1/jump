@@ -145,6 +145,16 @@ public class JumpSetupCommand implements CommandExecutor {
                     player.sendMessage("§cDu bist nicht im Setup.");
             }
             break;
+            case "delete": {
+                if (args.length != 1) {
+                    this.sendHelpMessage(player, label);
+                    return false;
+                }
+                final String name = args[0];
+                DefaultJumpAndRunSetup.getInstance().deleteJumpAndRun(name);
+                player.sendMessage("§cDas Jump And Run wurde, sofern es existiert hat, gelöscht.");
+            }
+            break;
             default:
                 this.sendHelpMessage(player, label);
                 break;
@@ -160,7 +170,8 @@ public class JumpSetupCommand implements CommandExecutor {
             String.format("/%s removecheckpoint <Index>", label),
             String.format("/%s teleportcheckpoint <Index>", label),
             String.format("/%s stop", label),
-            String.format("/%s save", label)
+            String.format("/%s save", label),
+            String.format("/%s delete <Name>", label)
         });
     }
 }
