@@ -47,6 +47,25 @@ public class JumpAndRunListener implements Listener {
     }
 
     @EventHandler
+    public void onMoveCheckpoint(PlayerMoveEvent event) {
+        final Player player = event.getPlayer();
+        if (this.playerNotMovedBlock(player, event.getTo())) return;
+        this.lastLocation.put(player, event.getTo());
+
+        final JumpAndRunSession session = JumpAndRuns.getOperator().getJumpSessionInfo(player);
+        if (session == null) return;
+
+        session.getJumpAndRun().getCheckpoints().stream().filter(checkpointLocation -> {
+            final Location spawnLocation = checkpointLocation.toLocation();
+
+            return session.getCheckpoint() != session.getJumpAndRun().getIndex(checkpointLocation)
+                && (spawnLocation.getBlockX() == event.getTo().getBlockX()
+                && spawnLocation.getBlockZ() == event.getTo().getBlockZ()
+                && (event.getTo().getBlockY() - spawnLocation.getBlockY() <= 1.25 && event.getTo().getBlockY() - spawnLocation.getBlockY() >= -0.1));
+        }).findFirst().ifPresent(serializableLocation -> session.achieveCheckpoint(session.getJumpAndRun().getIndex(serializableLocation)));
+    }
+
+    @EventHandler
     public void onQuit(PlayerQuitEvent event) {
         this.lastLocation.remove(event.getPlayer());
     }

@@ -22,4 +22,9 @@ public class JumpAndRunSession {
             this.player.teleport(this.jumpAndRun.getCheckpoint(this.checkpoint).toLocation());
     }
 
+    public void achieveCheckpoint(int checkpoint) {
+        if (this.checkpoint == checkpoint) return;
+        this.checkpoint = checkpoint;
+    }
+
 }
