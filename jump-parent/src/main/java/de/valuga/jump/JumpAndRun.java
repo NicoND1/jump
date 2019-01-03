@@ -27,6 +27,14 @@ public class JumpAndRun implements JsonDeserializer<JumpAndRun> {
     @Expose private final JumpAndRunReward reward;
     @Expose private final int deathAt;
 
+    public SerializableLocation getCheckpoint(int index) {
+        return this.checkpoints.get(index);
+    }
+
+    public int getIndex(SerializableLocation checkpoint) {
+        return this.checkpoints.indexOf(checkpoint);
+    }
+
     @Override
     public JumpAndRun deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
         final JsonObject jsonObject = json.getAsJsonObject();

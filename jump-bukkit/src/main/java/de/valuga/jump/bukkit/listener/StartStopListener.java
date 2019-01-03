@@ -1,4 +1,5 @@
 package de.valuga.jump.bukkit.listener;
+import de.valuga.jump.JumpAndRunSession;
 import de.valuga.jump.JumpAndRuns;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -20,7 +21,7 @@ public class StartStopListener implements Listener {
     @EventHandler
     public void onMoveStart(PlayerMoveEvent event) {
         final Player player = event.getPlayer();
-        if (!this.playerMovedBlock(player, event.getTo())) return;
+        if (this.playerNotMovedBlock(player, event.getTo())) return;
         this.lastLocation.put(player, event.getTo());
 
         JumpAndRuns.getOperator().getJumpAndRuns().stream().filter(jumpAndRun -> {
@@ -33,16 +34,29 @@ public class StartStopListener implements Listener {
     }
 
     @EventHandler
+    public void onMoveDeath(PlayerMoveEvent event) {
+        final Player player = event.getPlayer();
+        if (this.playerNotMovedBlock(player, event.getTo())) return;
+        this.lastLocation.put(player, event.getTo());
+
+        final JumpAndRunSession session = JumpAndRuns.getOperator().getJumpSessionInfo(player);
+        if (session == null) return;
+
+        if (event.getTo().getBlockY() < session.getJumpAndRun().getDeathAt())
+            player.teleport(session.getJumpAndRun().getSpawnLocation().toLocation());
+    }
+
+    @EventHandler
     public void onQuit(PlayerQuitEvent event) {
         this.lastLocation.remove(event.getPlayer());
     }
 
-    private boolean playerMovedBlock(Player player, Location to) {
+    private boolean playerNotMovedBlock(Player player, Location to) {
         if (!this.lastLocation.containsKey(player)) return true;
 
         final Location lastLocation = this.lastLocation.get(player);
 
-        return !(lastLocation.getBlockX() == to.getBlockX() && lastLocation.getBlockY() == to.getBlockY() && lastLocation.getBlockZ() == to.getBlockZ());
+        return lastLocation.getBlockX() == to.getBlockX() && lastLocation.getBlockY() == to.getBlockY() && lastLocation.getBlockZ() == to.getBlockZ();
     }
 
 }
