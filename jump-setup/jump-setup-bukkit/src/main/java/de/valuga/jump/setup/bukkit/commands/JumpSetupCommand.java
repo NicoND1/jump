@@ -94,7 +94,7 @@ public class JumpSetupCommand implements CommandExecutor {
                 final Optional<SetupPlayer> optionalSetupPlayer = DefaultJumpAndRunSetup.getInstance().getSetupPlayer(player);
 
                 optionalSetupPlayer.ifPresent(setupPlayer -> {
-                    if (setupPlayer.getCheckpoints().size() - 1 > index) {
+                    if (setupPlayer.getCheckpoints().size() - 1 < index) {
                         player.sendMessage("§cDiesen Checkpoint kann es nicht geben.");
                         return;
                     }
@@ -121,7 +121,7 @@ public class JumpSetupCommand implements CommandExecutor {
                 final Optional<SetupPlayer> optionalSetupPlayer = DefaultJumpAndRunSetup.getInstance().getSetupPlayer(player);
 
                 optionalSetupPlayer.ifPresent(setupPlayer -> {
-                    if (setupPlayer.getCheckpoints().size() - 1 > index) {
+                    if (setupPlayer.getCheckpoints().size() - 1 < index) {
                         player.sendMessage("§cDiesen Checkpoint kann es nicht geben.");
                         return;
                     }
