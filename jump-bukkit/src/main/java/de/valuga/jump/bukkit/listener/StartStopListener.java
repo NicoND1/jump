@@ -18,7 +18,7 @@ public class StartStopListener implements Listener {
     private final Map<Player, Location> lastLocation = new HashMap<>();
 
     @EventHandler
-    public void onMove(PlayerMoveEvent event) {
+    public void onMoveStart(PlayerMoveEvent event) {
         final Player player = event.getPlayer();
         if (!this.playerMovedBlock(player, event.getTo())) return;
         this.lastLocation.put(player, event.getTo());
@@ -26,10 +26,10 @@ public class StartStopListener implements Listener {
         JumpAndRuns.getOperator().getJumpAndRuns().stream().filter(jumpAndRun -> {
             final Location spawnLocation = jumpAndRun.getSpawnLocation().toLocation();
 
-
-        }).forEach(jumpAndRun -> {
-
-        });
+            return spawnLocation.getBlockX() == event.getTo().getBlockX()
+                && spawnLocation.getBlockZ() == event.getTo().getBlockZ()
+                && (event.getTo().getBlockY() - spawnLocation.getBlockY() <= 1.25 && event.getTo().getBlockY() - spawnLocation.getBlockY() >= -0.1);
+        }).findFirst().ifPresent(jumpAndRun -> JumpAndRuns.getOperator().startJumpAndRun(player, jumpAndRun));
     }
 
     @EventHandler
