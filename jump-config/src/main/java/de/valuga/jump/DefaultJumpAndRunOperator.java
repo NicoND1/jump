@@ -71,6 +71,6 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
 
     @Override
     public void finishJumpAndRun(JumpAndRunSession jumpAndRunSession) {
-
+        jumpAndRunSession.getPlayer().sendMessage("Finish");
     }
 }
