@@ -9,6 +9,7 @@
   <version>0.0.1</version>
   <modules>
     <module>jump-parent</module>
+    <module>jump-hotbar</module>
     <module>jump-config</module>
     <module>jump-bukkit-operator</module>
     <module>jump-bukkit</module>
