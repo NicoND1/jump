@@ -12,6 +12,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * @author Nico_ND1
@@ -33,8 +34,8 @@ public class JumpAndRunListener implements Listener {
                 && spawnLocation.getBlockZ() == event.getTo().getBlockZ()
                 && (event.getTo().getBlockY() - spawnLocation.getBlockY() <= 1.25 && event.getTo().getBlockY() - spawnLocation.getBlockY() >= -0.1);
         }).filter(jumpAndRun -> {
-            final JumpAndRunSession session = JumpAndRuns.getOperator().getJumpSessionInfo(player);
-            return session == null || !session.getJumpAndRun().equals(jumpAndRun);
+            final Optional<JumpAndRunSession> session = JumpAndRuns.getOperator().getJumpSessionInfo(player);
+            return !session.isPresent() || !session.get().getJumpAndRun().equals(jumpAndRun);
         }).findFirst().ifPresent(jumpAndRun -> JumpAndRuns.getOperator().startJumpAndRun(player, jumpAndRun));
     }
 
@@ -43,10 +44,9 @@ public class JumpAndRunListener implements Listener {
         final Player player = event.getPlayer();
         if (this.playerNotMovedBlock(player, event.getTo())) return;
 
-        final JumpAndRunSession session = JumpAndRuns.getOperator().getJumpSessionInfo(player);
-        if (session == null) return;
-
-        if (event.getTo().getBlockY() <= session.getJumpAndRun().getDeathAt()) session.reset();
+        JumpAndRuns.getOperator().getJumpSessionInfo(player).ifPresent(session -> {
+            if (event.getTo().getBlockY() <= session.getJumpAndRun().getDeathAt()) session.reset();
+        });
     }
 
     @EventHandler
@@ -54,17 +54,16 @@ public class JumpAndRunListener implements Listener {
         final Player player = event.getPlayer();
         if (this.playerNotMovedBlock(player, event.getTo())) return;
 
-        final JumpAndRunSession session = JumpAndRuns.getOperator().getJumpSessionInfo(player);
-        if (session == null) return;
+        JumpAndRuns.getOperator().getJumpSessionInfo(player).ifPresent(session -> {
+            session.getJumpAndRun().getCheckpoints().stream().filter(checkpointLocation -> {
+                final Location spawnLocation = checkpointLocation.toLocation();
 
-        session.getJumpAndRun().getCheckpoints().stream().filter(checkpointLocation -> {
-            final Location spawnLocation = checkpointLocation.toLocation();
-
-            return session.getCheckpoint() != session.getJumpAndRun().getIndex(checkpointLocation)
-                && (spawnLocation.getBlockX() == event.getTo().getBlockX()
-                && spawnLocation.getBlockZ() == event.getTo().getBlockZ()
-                && (event.getTo().getBlockY() - spawnLocation.getBlockY() <= 1.25 && event.getTo().getBlockY() - spawnLocation.getBlockY() >= -0.1));
-        }).findFirst().ifPresent(serializableLocation -> session.achieveCheckpoint(session.getJumpAndRun().getIndex(serializableLocation)));
+                return session.getCheckpoint() != session.getJumpAndRun().getIndex(checkpointLocation)
+                    && (spawnLocation.getBlockX() == event.getTo().getBlockX()
+                    && spawnLocation.getBlockZ() == event.getTo().getBlockZ()
+                    && (event.getTo().getBlockY() - spawnLocation.getBlockY() <= 1.25 && event.getTo().getBlockY() - spawnLocation.getBlockY() >= -0.1));
+            }).findFirst().ifPresent(serializableLocation -> session.achieveCheckpoint(session.getJumpAndRun().getIndex(serializableLocation)));
+        });
     }
 
     @EventHandler
