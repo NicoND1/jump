@@ -64,8 +64,6 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
         final JumpAndRunSession jumpAndRunSession = new JumpAndRunSession(player, jumpAndRun);
         this.sessions.put(player.getUniqueId(), jumpAndRunSession);
 
-        player.sendMessage(jumpAndRunSession.getJumpAndRun().getName());
-        player.teleport(jumpAndRun.getSpawnLocation().toLocation());
         return jumpAndRunSession;
     }
 
