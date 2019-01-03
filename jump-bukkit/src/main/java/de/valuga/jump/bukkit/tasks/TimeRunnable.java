@@ -17,7 +17,7 @@ public class TimeRunnable implements Runnable {
             final Player player = session.getPlayer();
             final PacketPlayOutChat packet = new PacketPlayOutChat(ChatSerializer.a(
                 String.format("{\"text\":\"%,8d\"}", System.currentTimeMillis() - session.getStartTime())
-            ));
+            ), (byte) 2);
             ((CraftPlayer) player).getHandle().playerConnection.sendPacket(packet);
         });
     }

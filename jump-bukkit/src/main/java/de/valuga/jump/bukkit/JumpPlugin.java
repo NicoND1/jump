@@ -16,6 +16,6 @@ public class JumpPlugin extends JavaPlugin {
         JumpAndRuns.setOperator(new DefaultJumpAndRunOperator());
         JumpAndRuns.getOperator().loadJumpAndRuns();
         Bukkit.getPluginManager().registerEvents(new JumpAndRunListener(), this);
-        Bukkit.getScheduler().scheduleAsyncRepeatingTask(this, new TimeRunnable(), 4, 4);
+        Bukkit.getScheduler().scheduleAsyncRepeatingTask(this, new TimeRunnable(), 2, 2);
     }
 }
