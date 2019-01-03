@@ -21,7 +21,7 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
         .registerTypeAdapter(JumpAndRun.class, new JumpAndRun())
         .create();
     private final File configDirectory = new File("jump-and-runs");
-    @Getter private final Map<UUID, JumpAndRunSession> sessions = new HashMap<>();
+    @Getter private final Map<UUID, JumpAndRunSession> sessions = Collections.synchronizedMap(new HashMap<>());
     private final List<JumpAndRun> cachedJumpAndRuns = new ArrayList<>();
 
     @Deprecated
