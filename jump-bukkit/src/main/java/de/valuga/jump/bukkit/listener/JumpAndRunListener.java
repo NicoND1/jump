@@ -32,6 +32,9 @@ public class JumpAndRunListener implements Listener {
             return spawnLocation.getBlockX() == event.getTo().getBlockX()
                 && spawnLocation.getBlockZ() == event.getTo().getBlockZ()
                 && (event.getTo().getBlockY() - spawnLocation.getBlockY() <= 1.25 && event.getTo().getBlockY() - spawnLocation.getBlockY() >= -0.1);
+        }).filter(jumpAndRun -> {
+            final JumpAndRunSession session = JumpAndRuns.getOperator().getJumpSessionInfo(player);
+            return session == null || !session.getJumpAndRun().equals(jumpAndRun);
         }).findFirst().ifPresent(jumpAndRun -> JumpAndRuns.getOperator().startJumpAndRun(player, jumpAndRun));
     }
 
