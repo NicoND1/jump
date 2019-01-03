@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * @author Nico_ND1
  */
-public class StartStopListener implements Listener {
+public class JumpAndRunListener implements Listener {
 
     private final Map<Player, Location> lastLocation = new HashMap<>();
 
