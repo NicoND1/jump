@@ -21,6 +21,7 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
         .create();
     private final File configDirectory = new File("jump-and-runs");
     private final Map<UUID, JumpAndRunSession> sessions = Collections.synchronizedMap(new HashMap<>());
+    private final List<JumpAndRun> cachedJumpAndRuns = new ArrayList<>();
 
     @Deprecated
     @Override
@@ -37,6 +38,8 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
 
     @Override
     public List<JumpAndRun> getJumpAndRuns() {
+        if (!this.cachedJumpAndRuns.isEmpty()) return this.cachedJumpAndRuns;
+
         final List<JumpAndRun> jumpAndRuns = new ArrayList<>();
 
         for (File file : Objects.requireNonNull(this.configDirectory.listFiles())) {
@@ -48,6 +51,11 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
         }
 
         return jumpAndRuns;
+    }
+
+    @Override
+    public void loadJumpAndRuns() {
+        this.cachedJumpAndRuns.addAll(this.getJumpAndRuns());
     }
 
     @Override

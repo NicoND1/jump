@@ -13,8 +13,8 @@ public interface JumpAndRunOperator {
      * Creates a new {@link JumpAndRun} and saves it to a json {@link File}.
      *
      * @param jumpAndRun The {@link JumpAndRun} to save
-     * @deprecated Moved to setup
      * @since 0.0.1
+     * @deprecated Moved to setup
      */
     void createJumpAndRun(JumpAndRun jumpAndRun);
 
@@ -25,6 +25,13 @@ public interface JumpAndRunOperator {
      * @since 0.0.1
      */
     List<JumpAndRun> getJumpAndRuns();
+
+    /**
+     * Loads all {@link JumpAndRun jump and runs}
+     *
+     * @since 0.0.10
+     */
+    void loadJumpAndRuns();
 
     /**
      * Starts a {@link JumpAndRun} for the {@code player}.
