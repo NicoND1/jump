@@ -10,12 +10,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>jump-bukkit</artifactId>
-  <version>0.0.13</version>
+  <version>0.0.14</version>
 
   <dependencies>
     <dependency>
       <groupId>de.valuga</groupId>
-      <artifactId>jump-config</artifactId>
+      <artifactId>jump-bukkit-operator</artifactId>
       <version>LATEST</version>
       <scope>compile</scope>
     </dependency>

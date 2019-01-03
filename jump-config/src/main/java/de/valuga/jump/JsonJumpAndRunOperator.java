@@ -2,7 +2,6 @@ package de.valuga.jump;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import lombok.Getter;
-import org.bukkit.entity.Player;
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -12,7 +11,7 @@ import java.util.*;
  * @author Nico_ND1
  * @since 0.0.2
  */
-public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
+public abstract class JsonJumpAndRunOperator implements JumpAndRunOperator {
 
     private final Gson gson = new GsonBuilder()
         .excludeFieldsWithoutExposeAnnotation()
@@ -21,7 +20,7 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
         .registerTypeAdapter(JumpAndRun.class, new JumpAndRun())
         .create();
     private final File configDirectory = new File("jump-and-runs");
-    @Getter private final Map<UUID, JumpAndRunSession> sessions = Collections.synchronizedMap(new HashMap<>());
+    @Getter protected final Map<UUID, JumpAndRunSession> sessions = Collections.synchronizedMap(new HashMap<>());
     private final List<JumpAndRun> cachedJumpAndRuns = new ArrayList<>();
 
     @Deprecated
@@ -57,24 +56,5 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
     @Override
     public void loadJumpAndRuns() {
         this.cachedJumpAndRuns.addAll(this.getJumpAndRuns());
-    }
-
-    @Override
-    public JumpAndRunSession startJumpAndRun(Player player, JumpAndRun jumpAndRun) {
-        final JumpAndRunSession jumpAndRunSession = new JumpAndRunSession(player, jumpAndRun);
-        this.sessions.put(player.getUniqueId(), jumpAndRunSession);
-
-        return jumpAndRunSession;
-    }
-
-    @Override
-    public Optional<JumpAndRunSession> getJumpSessionInfo(Player player) {
-        return Optional.ofNullable(this.sessions.get(player.getUniqueId()));
-    }
-
-    @Override
-    public void finishJumpAndRun(JumpAndRunSession jumpAndRunSession) {
-        this.sessions.remove(jumpAndRunSession.getPlayer().getUniqueId());
-        jumpAndRunSession.getPlayer().sendMessage("Finish");
     }
 }

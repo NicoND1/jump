@@ -1,7 +1,7 @@
 package de.valuga.jump.bukkit.listener;
-import de.valuga.jump.DefaultJumpAndRunOperator;
 import de.valuga.jump.JumpAndRunSession;
 import de.valuga.jump.JumpAndRuns;
+import de.valuga.jump.bukkit.operator.BukkitJumpAndRunOperator;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -69,7 +69,7 @@ public class JumpAndRunListener implements Listener {
     @EventHandler
     public void onQuit(PlayerQuitEvent event) {
         this.lastLocation.remove(event.getPlayer());
-        ((DefaultJumpAndRunOperator) JumpAndRuns.getOperator()).getSessions().remove(event.getPlayer().getUniqueId());
+        ((BukkitJumpAndRunOperator) JumpAndRuns.getOperator()).getSessions().remove(event.getPlayer().getUniqueId());
     }
 
     private boolean playerNotMovedBlock(Player player, Location to) {
