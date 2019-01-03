@@ -9,9 +9,6 @@
       <change beforePath="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/JumpPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/JumpPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/listener/HotbarListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/listener/HotbarListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/src/main/java/de/valuga/jump/bukkit/hotbar/HotbarManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/src/main/java/de/valuga/jump/bukkit/hotbar/HotbarManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,16 +44,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="15" />
-          <entry key="java" value="14580" />
-          <entry key="xml" value="924" />
+          <entry key="java" value="14685" />
+          <entry key="xml" value="927" />
           <entry key="yml" value="304" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14580" />
+          <entry key="JAVA" value="14685" />
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="XML" value="924" />
+          <entry key="XML" value="927" />
           <entry key="YAML" value="304" />
         </counts>
       </usages-collector>
@@ -65,8 +62,8 @@
           <entry key="class" value="6" />
           <entry key="gitignore" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="76" />
-          <entry key="xml" value="42" />
+          <entry key="java" value="77" />
+          <entry key="xml" value="44" />
           <entry key="yml" value="5" />
         </counts>
       </usages-collector>
@@ -74,9 +71,9 @@
         <counts>
           <entry key="CLASS" value="6" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="76" />
+          <entry key="JAVA" value="77" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="42" />
+          <entry key="XML" value="44" />
           <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
@@ -94,19 +91,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jump-bukkit/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -114,8 +102,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/JumpPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="30" column="66" lean-forward="true" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+            <state relative-caret-position="572">
+              <caret line="45" column="116" selection-start-line="45" selection-start-column="116" selection-end-line="45" selection-end-column="116" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jump-bukkit-operator/src/main/java/de/valuga/jump/bukkit/operator/BukkitJumpAndRunOperator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -130,19 +145,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java">
+        <entry file="file://$PROJECT_DIR$/jump-bukkit-operator/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jump-bukkit-operator/src/main/java/de/valuga/jump/bukkit/operator/BukkitJumpAndRunOperator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+            <state relative-caret-position="204">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -151,16 +157,7 @@
         <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/listener/HotbarListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="439">
-              <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -232,15 +229,15 @@
         <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/HotbarManager.java" />
         <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/AbstractHotbarInventory.java" />
         <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/src/main/java/de/valuga/jump/bukkit/hotbar/HotbarInventory.java" />
-        <option value="$PROJECT_DIR$/jump-bukkit-operator/pom.xml" />
         <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/src/main/java/de/valuga/jump/bukkit/hotbar/HotbarManager.java" />
         <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml" />
-        <option value="$PROJECT_DIR$/jump-bukkit-operator/src/main/java/de/valuga/jump/bukkit/operator/BukkitJumpAndRunOperator.java" />
-        <option value="$PROJECT_DIR$/jump-bukkit/pom.xml" />
-        <option value="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/JumpPlugin.java" />
-        <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java" />
         <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/listener/HotbarListener.java" />
+        <option value="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/JumpPlugin.java" />
+        <option value="$PROJECT_DIR$/jump-bukkit-operator/src/main/java/de/valuga/jump/bukkit/operator/BukkitJumpAndRunOperator.java" />
+        <option value="$PROJECT_DIR$/jump-bukkit-operator/pom.xml" />
+        <option value="$PROJECT_DIR$/jump-bukkit/pom.xml" />
+        <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java" />
+        <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml" />
       </list>
     </option>
   </component>
@@ -251,10 +248,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="960" />
+    <option name="y" value="-13" />
+    <option name="width" value="1699" />
+    <option name="height" value="1019" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -404,57 +401,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hotbar" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hotbar" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -466,7 +412,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546552530444" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546553173852" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ZoneWars/Lobby" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -544,12 +490,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546481295492</updated>
       <workItem from="1546481297137" duration="6081000" />
-      <workItem from="1546525023191" duration="22550000" />
+      <workItem from="1546525023191" duration="23192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28631000" />
+    <option name="totallyTimeSpent" value="29273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -571,7 +517,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -848,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jump-bukkit-operator/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/src/main/java/de/valuga/jump/bukkit/hotbar/HotbarInventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -866,27 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/AbstractHotbarInventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jump-bukkit/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -914,28 +832,56 @@
     <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/listener/HotbarListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
-          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java">
+    <entry file="file://$PROJECT_DIR$/jump-bukkit-operator/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        <state relative-caret-position="204">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-bukkit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/JumpPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="66" lean-forward="true" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+        <state relative-caret-position="572">
+          <caret line="45" column="116" selection-start-line="45" selection-start-column="116" selection-end-line="45" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jump-bukkit-operator/src/main/java/de/valuga/jump/bukkit/operator/BukkitJumpAndRunOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+        <state relative-caret-position="255">
+          <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/AbstractHotbarInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>

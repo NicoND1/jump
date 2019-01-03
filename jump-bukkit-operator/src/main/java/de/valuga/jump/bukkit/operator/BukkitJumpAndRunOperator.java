@@ -31,5 +31,6 @@ public class BukkitJumpAndRunOperator extends JsonJumpAndRunOperator {
     public void finishJumpAndRun(JumpAndRunSession jumpAndRunSession) {
         this.sessions.remove(jumpAndRunSession.getPlayer().getUniqueId());
         jumpAndRunSession.getPlayer().sendMessage("Finish");
+        HotbarManager.getInstance().setInventory(jumpAndRunSession.getPlayer(), "empty");
     }
 }

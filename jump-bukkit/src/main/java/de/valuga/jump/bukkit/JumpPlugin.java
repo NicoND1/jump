@@ -14,6 +14,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Collections;
 import java.util.HashMap;
 
 /**
@@ -42,5 +43,6 @@ public class JumpPlugin extends JavaPlugin {
             });
         }});
         HotbarManager.getInstance().registerInventory("jump-and-run", hotbarInventory);
+        HotbarManager.getInstance().registerInventory("empty", new AbstractHotbarInventory(Collections.emptyMap()));
     }
 }

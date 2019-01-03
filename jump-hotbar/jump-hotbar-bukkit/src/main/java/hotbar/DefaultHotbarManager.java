@@ -27,6 +27,7 @@ public class DefaultHotbarManager extends HotbarManager {
     @Override
     public void setInventory(Player player, HotbarInventory hotbarInventory) {
         this.players.put(player.getUniqueId(), hotbarInventory);
+        player.getInventory().clear();
         hotbarInventory.getItems().forEach((slot, hotbarItem) -> player.getInventory().setItem(slot, hotbarItem.getItemStack()));
     }
 
