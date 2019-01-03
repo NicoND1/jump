@@ -1,6 +1,8 @@
 package de.valuga.jump.setup;
 import org.bukkit.entity.Player;
 
+import java.util.Optional;
+
 /**
  * @author Nico_ND1
  */
@@ -10,7 +12,7 @@ public interface JumpAndRunSetup {
 
     void stopSetup(SetupPlayer setupPlayer);
 
-    SetupPlayer getSetupPlayer(Player player);
+    Optional<SetupPlayer> getSetupPlayer(Player player);
 
     void saveJumpAndRun(SetupPlayer setupPlayer);
 

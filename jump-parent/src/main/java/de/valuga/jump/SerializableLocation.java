@@ -27,6 +27,15 @@ public class SerializableLocation implements JsonDeserializer<SerializableLocati
     @Expose private final float pitch;
     private Location location;
 
+    public SerializableLocation(Location location) {
+        this.world = location.getWorld().getName();
+        this.x = location.getX();
+        this.y = location.getY();
+        this.z = location.getZ();
+        this.yaw = location.getYaw();
+        this.pitch = location.getPitch();
+    }
+
     /**
      * Gets a instance of {@link Location} with the parameters from this class.
      *

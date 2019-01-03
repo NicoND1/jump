@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="188ebe59-0c42-43fc-aef6-133f01dc643e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jump-setup/jump-setup-bukkit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/java/de/valuga/jump/setup/bukkit/JumpSetupPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/resources/plugin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jump-setup/jump-setup-parent/src/main/java/de/valuga/jump/setup/JumpAndRunSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jump-setup/jump-setup-parent/src/main/java/de/valuga/jump/setup/SetupPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-setup/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jump-setup/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/java/de/valuga/jump/setup/bukkit/setup/DefaultJumpAndRunSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/SerializableLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/SerializableLocation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,15 +31,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5857" />
-          <entry key="xml" value="268" />
+          <entry key="java" value="6244" />
+          <entry key="xml" value="288" />
           <entry key="yml" value="200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5857" />
-          <entry key="XML" value="268" />
+          <entry key="JAVA" value="6244" />
+          <entry key="XML" value="288" />
           <entry key="YAML" value="200" />
         </counts>
       </usages-collector>
@@ -53,17 +47,17 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="17" />
-          <entry key="xml" value="9" />
+          <entry key="java" value="19" />
+          <entry key="xml" value="11" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="19" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="9" />
+          <entry key="XML" value="11" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -72,28 +66,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-parent/pom.xml">
+        <entry file="file://$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/SerializableLocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-config/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/JumpAndRunOperator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="493">
+              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -107,11 +83,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/java/de/valuga/jump/setup/bukkit/setup/DefaultJumpAndRunSetup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="340">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -125,11 +110,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/resources/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-parent/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -144,10 +138,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-config/src/main/java/de/valuga/jump/DefaultJumpAndRunOperator.java">
+        <entry file="file://$PROJECT_DIR$/jump-setup/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+            <state relative-caret-position="408">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -182,7 +176,6 @@
         <option value="$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/JumpAndRuns.java" />
         <option value="$PROJECT_DIR$/jump-bukkit/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/listener/StartListener.java" />
-        <option value="$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/SerializableLocation.java" />
         <option value="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/listener/StartStopListener.java" />
         <option value="$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/JumpAndRunSession.java" />
         <option value="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/listener/JumpAndRunListener.java" />
@@ -197,9 +190,12 @@
         <option value="$PROJECT_DIR$/jump-config/pom.xml" />
         <option value="$PROJECT_DIR$/jump-setup/jump-setup-parent/src/main/java/de/valuga/jump/setup/JumpAndRunSetup.java" />
         <option value="$PROJECT_DIR$/jump-setup/jump-setup-parent/src/main/java/de/valuga/jump/setup/SetupPlayer.java" />
-        <option value="$PROJECT_DIR$/jump-setup/jump-setup-bukkit/pom.xml" />
         <option value="$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/java/de/valuga/jump/setup/bukkit/JumpSetupPlugin.java" />
         <option value="$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/jump-setup/jump-setup-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/jump-setup/jump-setup-bukkit/pom.xml" />
+        <option value="$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/SerializableLocation.java" />
+        <option value="$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/java/de/valuga/jump/setup/bukkit/setup/DefaultJumpAndRunSetup.java" />
       </list>
     </option>
   </component>
@@ -413,6 +409,17 @@
               <item name="jump-setup-bukkit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bukkit" type="462c0819:PsiDirectoryNode" />
+              <item name="setup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jump" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup-bukkit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -466,7 +473,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546526437451" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546526438974" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -539,12 +546,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546481295492</updated>
       <workItem from="1546481297137" duration="6081000" />
-      <workItem from="1546525023191" duration="1361000" />
+      <workItem from="1546525023191" duration="1687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7442000" />
+    <option name="totallyTimeSpent" value="7768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -618,13 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/SerializableLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jump-bukkit/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -657,16 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jump-setup/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -719,17 +709,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-parent/src/main/java/de/valuga/jump/setup/JumpAndRunSetup.java">
+    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="51">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-setup/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="340">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -740,10 +744,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/resources/plugin.yml">
+    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-parent/src/main/java/de/valuga/jump/setup/JumpAndRunSetup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        <state relative-caret-position="272">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/SerializableLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/java/de/valuga/jump/setup/bukkit/setup/DefaultJumpAndRunSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
         </state>
       </provider>
     </entry>
