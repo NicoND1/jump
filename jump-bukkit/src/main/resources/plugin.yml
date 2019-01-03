@@ -1,4 +1,4 @@
-name: Jumps
+name: ${project.name}
 author: Nico_ND1
 version: ${project.version}
 main: de.valuga.jump.bukkit.JumpPlugin
