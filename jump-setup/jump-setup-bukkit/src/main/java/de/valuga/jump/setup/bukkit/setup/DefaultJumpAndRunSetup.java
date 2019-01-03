@@ -19,6 +19,12 @@ import java.util.Optional;
  */
 public class DefaultJumpAndRunSetup implements JumpAndRunSetup {
 
+    private static final DefaultJumpAndRunSetup INSTANCE = new DefaultJumpAndRunSetup();
+
+    public static DefaultJumpAndRunSetup getInstance() {
+        return DefaultJumpAndRunSetup.INSTANCE;
+    }
+
     private final List<SetupPlayer> setupPlayers = new ArrayList<>();
     private final File configDirectory = new File("jump-and-runs");
     private final Gson gson = new GsonBuilder()
