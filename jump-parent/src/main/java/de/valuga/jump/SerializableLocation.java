@@ -4,6 +4,8 @@ import com.google.gson.annotations.Expose;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 
 import java.lang.reflect.Type;
 
@@ -21,6 +23,23 @@ public class SerializableLocation implements JsonDeserializer<SerializableLocati
     @Expose private final double z;
     @Expose private final float yaw;
     @Expose private final float pitch;
+
+    /**
+     * Creates a new instance of {@link Location} with the parameters from this class.
+     *
+     * @return A new instance of {@link Location}
+     * @since 0.0.5
+     */
+    public Location toLocation() {
+        return new Location(
+            Bukkit.getWorld(this.world),
+            this.x,
+            this.y,
+            this.z,
+            this.yaw,
+            this.pitch
+        );
+    }
 
     @Override
     public SerializableLocation deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {

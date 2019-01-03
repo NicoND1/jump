@@ -51,6 +51,7 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
 
     @Override
     public JumpAndRunSession startJumpAndRun(Player player, JumpAndRun jumpAndRun) {
+        player.teleport(jumpAndRun.getSpawnLocation().toLocation());
         return null;
     }
 
