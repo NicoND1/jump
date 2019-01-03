@@ -43,7 +43,7 @@ public class StartStopListener implements Listener {
         if (session == null) return;
 
         if (event.getTo().getBlockY() < session.getJumpAndRun().getDeathAt())
-            player.teleport(session.getJumpAndRun().getSpawnLocation().toLocation());
+            session.reset();
     }
 
     @EventHandler
