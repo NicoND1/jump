@@ -13,6 +13,8 @@ public class JumpPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         JumpAndRuns.setOperator(new DefaultJumpAndRunOperator());
+        JumpAndRuns.getOperator().loadJumpAndRuns();
+        System.out.println(JumpAndRuns.getOperator().getJumpAndRuns());
         Bukkit.getPluginManager().registerEvents(new JumpAndRunListener(), this);
     }
 }

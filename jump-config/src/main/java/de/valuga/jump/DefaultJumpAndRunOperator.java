@@ -1,6 +1,7 @@
 package de.valuga.jump;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import lombok.Getter;
 import org.bukkit.entity.Player;
 
 import java.io.*;
@@ -20,7 +21,7 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
         .registerTypeAdapter(JumpAndRun.class, new JumpAndRun())
         .create();
     private final File configDirectory = new File("jump-and-runs");
-    private final Map<UUID, JumpAndRunSession> sessions = Collections.synchronizedMap(new HashMap<>());
+    @Getter private final Map<UUID, JumpAndRunSession> sessions = new HashMap<>();
     private final List<JumpAndRun> cachedJumpAndRuns = new ArrayList<>();
 
     @Deprecated
@@ -60,8 +61,12 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
 
     @Override
     public JumpAndRunSession startJumpAndRun(Player player, JumpAndRun jumpAndRun) {
+        final JumpAndRunSession jumpAndRunSession = new JumpAndRunSession(player, jumpAndRun);
+        this.sessions.put(player.getUniqueId(), jumpAndRunSession);
+
+        player.sendMessage(jumpAndRunSession.getJumpAndRun().getName());
         player.teleport(jumpAndRun.getSpawnLocation().toLocation());
-        return null;
+        return jumpAndRunSession;
     }
 
     @Override
