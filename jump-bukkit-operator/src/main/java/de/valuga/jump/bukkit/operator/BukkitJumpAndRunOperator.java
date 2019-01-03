@@ -2,6 +2,7 @@ package de.valuga.jump.bukkit.operator;
 import de.valuga.jump.JsonJumpAndRunOperator;
 import de.valuga.jump.JumpAndRun;
 import de.valuga.jump.JumpAndRunSession;
+import de.valuga.jump.bukkit.hotbar.HotbarManager;
 import org.bukkit.entity.Player;
 
 import java.util.Optional;
@@ -16,6 +17,7 @@ public class BukkitJumpAndRunOperator extends JsonJumpAndRunOperator {
     public JumpAndRunSession startJumpAndRun(Player player, JumpAndRun jumpAndRun) {
         final JumpAndRunSession jumpAndRunSession = new JumpAndRunSession(player, jumpAndRun);
         this.sessions.put(player.getUniqueId(), jumpAndRunSession);
+        HotbarManager.getInstance().setInventory(player, "jump-and-run");
 
         return jumpAndRunSession;
     }

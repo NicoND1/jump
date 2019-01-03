@@ -19,6 +19,12 @@
       <version>LATEST</version>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>de.valuga</groupId>
+      <artifactId>jump-hotbar-bukkit</artifactId>
+      <version>LATEST</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 
 </project>

@@ -2,6 +2,7 @@ package hotbar;
 import de.valuga.jump.bukkit.hotbar.HotbarInventory;
 import de.valuga.jump.bukkit.hotbar.HotbarManager;
 import hotbar.listener.HotbarListener;
+import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
@@ -17,7 +18,7 @@ import java.util.UUID;
 public class DefaultHotbarManager extends HotbarManager {
 
     private final Map<String, HotbarInventory> inventorys = new HashMap<>();
-    private final Map<UUID, HotbarInventory> players = new HashMap<>();
+    @Getter private final Map<UUID, HotbarInventory> players = new HashMap<>();
 
     public DefaultHotbarManager(Plugin plugin) {
         Bukkit.getPluginManager().registerEvents(new HotbarListener(), plugin);
@@ -27,6 +28,11 @@ public class DefaultHotbarManager extends HotbarManager {
     public void setInventory(Player player, HotbarInventory hotbarInventory) {
         this.players.put(player.getUniqueId(), hotbarInventory);
         hotbarInventory.getItems().forEach((slot, hotbarItem) -> player.getInventory().setItem(slot, hotbarItem.getItemStack()));
+    }
+
+    @Override
+    public void setInventory(Player player, String name) {
+        this.getInventory(name).ifPresent(hotbarInventory -> this.setInventory(player, hotbarInventory));
     }
 
     @Override

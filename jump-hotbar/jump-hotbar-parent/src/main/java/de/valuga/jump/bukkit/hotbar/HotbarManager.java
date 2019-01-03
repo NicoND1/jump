@@ -18,6 +18,8 @@ public abstract class HotbarManager {
 
     public abstract void setInventory(Player player, HotbarInventory hotbarInventory);
 
+    public abstract void setInventory(Player player, String name);
+
     public abstract Optional<HotbarInventory> getInventory(Player player);
 
     public abstract void registerInventory(String name, HotbarInventory hotbarInventory);
