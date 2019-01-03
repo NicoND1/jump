@@ -3,6 +3,7 @@ import org.bukkit.entity.Player;
 
 import java.io.File;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author Nico_ND1
@@ -50,7 +51,7 @@ public interface JumpAndRunOperator {
      * @return A {@link JumpAndRunSession} from the {@code player}
      * @since 0.0.3
      */
-    JumpAndRunSession getJumpSessionInfo(Player player);
+    Optional<JumpAndRunSession> getJumpSessionInfo(Player player);
 
     /**
      * Called when a {@link Player} finishes a {@link JumpAndRun}.

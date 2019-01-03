@@ -68,8 +68,8 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
     }
 
     @Override
-    public JumpAndRunSession getJumpSessionInfo(Player player) {
-        return this.sessions.get(player.getUniqueId());
+    public Optional<JumpAndRunSession> getJumpSessionInfo(Player player) {
+        return Optional.ofNullable(this.sessions.get(player.getUniqueId()));
     }
 
     @Override
