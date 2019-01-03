@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="188ebe59-0c42-43fc-aef6-133f01dc643e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-bukkit-operator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jump-bukkit-operator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-bukkit-operator/src/main/java/de/valuga/jump/bukkit/operator/BukkitJumpAndRunOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/jump-bukkit-operator/src/main/java/de/valuga/jump/bukkit/operator/BukkitJumpAndRunOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-bukkit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jump-bukkit/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/JumpPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/JumpPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,6 +40,7 @@
         <counts>
           <entry key="dummy" value="15" />
           <entry key="java" value="14685" />
+          <entry key="md" value="265" />
           <entry key="xml" value="927" />
           <entry key="yml" value="304" />
         </counts>
@@ -52,6 +48,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="14685" />
+          <entry key="Markdown" value="265" />
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="XML" value="927" />
           <entry key="YAML" value="304" />
@@ -63,8 +60,9 @@
           <entry key="gitignore" value="1" />
           <entry key="iml" value="2" />
           <entry key="java" value="77" />
-          <entry key="xml" value="44" />
-          <entry key="yml" value="5" />
+          <entry key="md" value="1" />
+          <entry key="xml" value="45" />
+          <entry key="yml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -72,24 +70,16 @@
           <entry key="CLASS" value="6" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="77" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="44" />
-          <entry key="YAML" value="5" />
+          <entry key="XML" value="45" />
+          <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-parent/src/main/java/de/valuga/jump/bukkit/hotbar/HotbarManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jump-bukkit/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -117,11 +107,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="136">
+                <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/resources/plugin.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -153,24 +173,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/listener/HotbarListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jump-hotbar/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -187,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/JumpAndRuns.java" />
         <option value="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/listener/StartListener.java" />
         <option value="$PROJECT_DIR$/jump-bukkit/src/main/java/de/valuga/jump/bukkit/listener/StartStopListener.java" />
         <option value="$PROJECT_DIR$/jump-setup/pom.xml" />
@@ -238,6 +239,7 @@
         <option value="$PROJECT_DIR$/jump-bukkit/pom.xml" />
         <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/src/main/java/hotbar/DefaultHotbarManager.java" />
         <option value="$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -269,137 +271,37 @@
             <path>
               <item name="jump" type="b2602c69:ProjectViewProjectNode" />
               <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jump" type="b2602c69:ProjectViewProjectNode" />
               <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup-bukkit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jump" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup-bukkit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jump" type="b2602c69:ProjectViewProjectNode" />
               <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bukkit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit-operator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit-operator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit-operator" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup-bukkit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jump" type="b2602c69:ProjectViewProjectNode" />
               <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit-operator" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup" type="462c0819:PsiDirectoryNode" />
+              <item name="jump-setup-bukkit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-bukkit-operator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="operator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-bukkit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jump" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar" type="462c0819:PsiDirectoryNode" />
-              <item name="jump-hotbar-bukkit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hotbar" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -412,7 +314,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546553173852" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546554210057" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ZoneWars/Lobby" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -490,12 +392,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546481295492</updated>
       <workItem from="1546481297137" duration="6081000" />
-      <workItem from="1546525023191" duration="23192000" />
+      <workItem from="1546525023191" duration="24167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29273000" />
+    <option name="totallyTimeSpent" value="30248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -517,7 +419,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -538,13 +440,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jump-parent/src/main/java/de/valuga/jump/JumpAndRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-SNAPSHOT-sources.jar!/org/bukkit/event/player/PlayerEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -675,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jump-config/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -728,13 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
           <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -880,8 +761,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jump-hotbar/jump-hotbar-bukkit/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jump-setup/jump-setup-bukkit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
