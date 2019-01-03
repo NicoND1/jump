@@ -22,6 +22,7 @@ public class DefaultJumpAndRunOperator implements JumpAndRunOperator {
     private final File configDirectory = new File("jump-and-runs");
     private final Map<UUID, JumpAndRunSession> sessions = Collections.synchronizedMap(new HashMap<>());
 
+    @Deprecated
     @Override
     public void createJumpAndRun(JumpAndRun jumpAndRun) {
         if (!this.configDirectory.exists()) this.configDirectory.mkdir();

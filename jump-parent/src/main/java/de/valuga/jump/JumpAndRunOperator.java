@@ -13,6 +13,7 @@ public interface JumpAndRunOperator {
      * Creates a new {@link JumpAndRun} and saves it to a json {@link File}.
      *
      * @param jumpAndRun The {@link JumpAndRun} to save
+     * @deprecated Moved to setup
      * @since 0.0.1
      */
     void createJumpAndRun(JumpAndRun jumpAndRun);

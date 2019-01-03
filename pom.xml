@@ -11,6 +11,7 @@
     <module>jump-parent</module>
     <module>jump-config</module>
     <module>jump-bukkit</module>
+    <module>jump-setup</module>
   </modules>
   <packaging>pom</packaging>
 

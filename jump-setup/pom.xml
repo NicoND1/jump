@@ -9,13 +9,17 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>jump-config</artifactId>
-  <version>0.0.4</version>
+  <artifactId>jump-setup</artifactId>
+  <version>0.0.1</version>
+  <modules>
+    <module>jump-setup-parent</module>
+  </modules>
+  <packaging>pom</packaging>
 
   <dependencies>
     <dependency>
       <groupId>de.valuga</groupId>
-      <artifactId>jump-parent</artifactId>
+      <artifactId>jump-config</artifactId>
       <version>LATEST</version>
       <scope>compile</scope>
     </dependency>
