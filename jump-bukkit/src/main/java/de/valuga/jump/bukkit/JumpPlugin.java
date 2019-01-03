@@ -5,7 +5,6 @@ import de.valuga.jump.bukkit.hotbar.HotbarItem;
 import de.valuga.jump.bukkit.hotbar.HotbarManager;
 import de.valuga.jump.bukkit.listener.JumpAndRunListener;
 import de.valuga.jump.bukkit.operator.BukkitJumpAndRunOperator;
-import de.valuga.jump.bukkit.tasks.TimeRunnable;
 import hotbar.AbstractHotbarInventory;
 import hotbar.DefaultHotbarManager;
 import org.bukkit.Bukkit;
@@ -27,7 +26,6 @@ public class JumpPlugin extends JavaPlugin {
         JumpAndRuns.setOperator(new BukkitJumpAndRunOperator());
         JumpAndRuns.getOperator().loadJumpAndRuns();
         Bukkit.getPluginManager().registerEvents(new JumpAndRunListener(), this);
-        Bukkit.getScheduler().scheduleAsyncRepeatingTask(this, new TimeRunnable(), 2, 2);
 
         HotbarManager.setInstance(new DefaultHotbarManager(this));
         this.registerInventory();
