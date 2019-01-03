@@ -30,7 +30,7 @@ public class JumpAndRunSession {
     }
 
     public void achieveCheckpoint(int checkpoint) {
-        if (this.checkpoint == checkpoint) return;
+        if (this.checkpoint >= checkpoint) return;
 
         if (checkpoint == this.jumpAndRun.getCheckpoints().size() - 1) {
             // Finish because the last checkpoint is the goal
