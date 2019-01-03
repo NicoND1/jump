@@ -25,10 +25,31 @@ public interface JumpAndRunOperator {
      */
     List<JumpAndRun> getJumpAndRuns();
 
+    /**
+     * Starts a {@link JumpAndRun} for the {@code player}.
+     *
+     * @param player     The {@link Player} to start the {@link JumpAndRun} for
+     * @param jumpAndRun The {@link JumpAndRun} to start
+     * @return A new {@link JumpAndRunSession} with the {@link Player}s jump information
+     * @since 0.0.3
+     */
     JumpAndRunSession startJumpAndRun(Player player, JumpAndRun jumpAndRun);
 
+    /**
+     * Gets a {@link JumpAndRunSession} for the {@code player}.
+     *
+     * @param player The {@link Player} to search for
+     * @return A {@link JumpAndRunSession} from the {@code player}
+     * @since 0.0.3
+     */
     JumpAndRunSession getJumpSessionInfo(Player player);
 
+    /**
+     * Called when a {@link Player} finishes a {@link JumpAndRun}.
+     *
+     * @param jumpAndRunSession The {@link JumpAndRun} from the {@link Player}
+     * @since 0.0.3
+     */
     void finishJumpAndRun(JumpAndRunSession jumpAndRunSession);
 
 }
