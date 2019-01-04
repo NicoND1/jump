@@ -16,6 +16,12 @@ public abstract class HotbarItem {
     private final ItemStack itemStack;
     private boolean allowLeftClick = false;
 
+    /**
+     * Called the the {@code player} interacts with the {@code itemStack}.
+     *
+     * @param player The {@link Player} that interacts with the {@code itemStack}
+     * @since 0.0.1
+     */
     public abstract void onInteract(Player player);
 
 }
