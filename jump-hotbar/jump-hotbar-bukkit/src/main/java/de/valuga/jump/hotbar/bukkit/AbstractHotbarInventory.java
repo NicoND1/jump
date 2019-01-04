@@ -1,6 +1,6 @@
-package hotbar;
-import de.valuga.jump.bukkit.hotbar.HotbarInventory;
-import de.valuga.jump.bukkit.hotbar.HotbarItem;
+package de.valuga.jump.hotbar.bukkit;
+import de.valuga.jump.hotbar.HotbarInventory;
+import de.valuga.jump.hotbar.HotbarItem;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

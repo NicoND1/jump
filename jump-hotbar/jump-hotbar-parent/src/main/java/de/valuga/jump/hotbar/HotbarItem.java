@@ -1,4 +1,4 @@
-package de.valuga.jump.bukkit.hotbar;
+package de.valuga.jump.hotbar;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

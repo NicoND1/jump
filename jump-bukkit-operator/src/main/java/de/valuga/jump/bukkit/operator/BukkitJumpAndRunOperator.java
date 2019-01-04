@@ -2,7 +2,7 @@ package de.valuga.jump.bukkit.operator;
 import de.valuga.jump.JsonJumpAndRunOperator;
 import de.valuga.jump.JumpAndRun;
 import de.valuga.jump.JumpAndRunSession;
-import de.valuga.jump.bukkit.hotbar.HotbarManager;
+import de.valuga.jump.hotbar.HotbarManager;
 import org.bukkit.entity.Player;
 
 import java.util.Optional;

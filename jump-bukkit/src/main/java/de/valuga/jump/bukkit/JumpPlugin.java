@@ -1,12 +1,12 @@
 package de.valuga.jump.bukkit;
 import de.valuga.jump.JumpAndRunSession;
 import de.valuga.jump.JumpAndRuns;
-import de.valuga.jump.bukkit.hotbar.HotbarItem;
-import de.valuga.jump.bukkit.hotbar.HotbarManager;
+import de.valuga.jump.hotbar.HotbarItem;
+import de.valuga.jump.hotbar.HotbarManager;
 import de.valuga.jump.bukkit.listener.JumpAndRunListener;
 import de.valuga.jump.bukkit.operator.BukkitJumpAndRunOperator;
-import hotbar.AbstractHotbarInventory;
-import hotbar.DefaultHotbarManager;
+import de.valuga.jump.hotbar.bukkit.AbstractHotbarInventory;
+import de.valuga.jump.hotbar.bukkit.DefaultHotbarManager;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

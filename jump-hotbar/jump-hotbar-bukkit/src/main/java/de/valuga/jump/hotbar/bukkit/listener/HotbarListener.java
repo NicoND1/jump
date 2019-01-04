@@ -1,6 +1,6 @@
-package hotbar.listener;
-import de.valuga.jump.bukkit.hotbar.HotbarManager;
-import hotbar.DefaultHotbarManager;
+package de.valuga.jump.hotbar.bukkit.listener;
+import de.valuga.jump.hotbar.bukkit.DefaultHotbarManager;
+import de.valuga.jump.hotbar.HotbarManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

@@ -1,7 +1,7 @@
-package hotbar;
-import de.valuga.jump.bukkit.hotbar.HotbarInventory;
-import de.valuga.jump.bukkit.hotbar.HotbarManager;
-import hotbar.listener.HotbarListener;
+package de.valuga.jump.hotbar.bukkit;
+import de.valuga.jump.hotbar.HotbarInventory;
+import de.valuga.jump.hotbar.HotbarManager;
+import de.valuga.jump.hotbar.bukkit.listener.HotbarListener;
 import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
