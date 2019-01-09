@@ -25,6 +25,12 @@
       <version>LATEST</version>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>de.valuga</groupId>
+      <artifactId>jump-stats</artifactId>
+      <version>LATEST</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 
 </project>

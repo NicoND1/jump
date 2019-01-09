@@ -8,13 +8,13 @@
   <artifactId>jump</artifactId>
   <version>0.0.1</version>
   <modules>
+    <module>jump-stats</module>
     <module>jump-parent</module>
     <module>jump-hotbar</module>
     <module>jump-config</module>
     <module>jump-bukkit-operator</module>
     <module>jump-bukkit</module>
     <module>jump-setup</module>
-    <module>jump-stats</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -68,6 +68,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>nico_nd1</id>
+      <name>nico_nd1</name>
+      <url>http://nico-nd1.de:8081/nexus/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>nico_nd1</id>
+      <name>nico_nd1</name>
+      <url>http://nico-nd1.de:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <build>
     <plugins>
